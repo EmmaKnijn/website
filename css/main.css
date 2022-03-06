@@ -1,14 +1,19 @@
 body {
     font-family: 'Heebo', sans-serif;
     background: rgb(177,177,255);
-    background: linear-gradient(135deg, rgba(177,177,255,1) 0%, rgba(0,212,255,1) 100%); 
+    background: radial-gradient(48.07% 185.97% at 90.31% 11.81%, rgba(189, 48, 255, 0.4) 0%, rgba(0, 255, 240, 0) 100%), radial-gradient(20.27% 49.52% at 23.28% 72.43%, rgba(48, 131, 255, 0.2) 0%, rgba(255, 48, 197, 0) 100%), linear-gradient(107.56deg, #B377FF 0%, #4378FF 55.73%, #00A3FF 100%);
     background-attachment: fixed;
     background-size: cover;
     color: white;
     line-height: 125%;
-    padding:2em;
+    padding:6.5rem;
+
 }
 
+.wrapper {
+    grid-template-columns: auto auto;
+    display: inline-grid;
+}
 
 a {
     color: black;
@@ -28,7 +33,15 @@ a {
     color:black;
     background-color: white;
     border-radius: 10px;
-    width: 100%
+    padding: 1.5rem
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    margin: 1rem;
+    width: 40%;
 }
 
 .logo {
@@ -44,22 +57,23 @@ a {
     text-align: center;
 }
 
-.center-projects {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
+
+@media only screen and (max-width: 750px) {
+    body {
+        width: 100%;
+    }
+    .center-projects {
+        width: 100%;
+    }
+    .intro-card {
+        width: 100%;
+        text-align: center;
+
+    }
 }
 
 h2 {
     font-size: 2em;
     font-weight: bold;
     color: white
-}
-
-.intro-card {
-    color:black;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
 }
