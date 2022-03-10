@@ -59,6 +59,11 @@ a {
 }
 
 
+svg {
+    position: relative;
+    top: 7px;
+}
+
 .project {
     color:black;
     background-color: white;
@@ -104,10 +109,11 @@ h2 {
     body {
         font-size: 0.8em;
         padding: 1rem;
+        text-align: center;
     }
 
     .white-button {
-        width: 50%;
+        width: 100%;
     }
     .wrapper {
         grid-gap: 1rem;
@@ -116,16 +122,24 @@ h2 {
     }
     .projects-section {
         width: 100vw;
+        
     }
-    
+    .project {
+        text-align: left;
+    }
     .linksholder {
         width: 89vw;
+        align-items: left;
     }
     .contactholder {
         width: 89vw;
+        align-items: left;
+        
     }
     .aboutmeholder {
         width: 89vw;
+        padding-top: 25px;
+        text-align: center;
     }
 }
 
@@ -133,10 +147,6 @@ h2 {
     body {
         font-size: 0.8em;
         padding: 1rem;
-    }
-
-    .white-button {
-        width: 50%;
     }
     .wrapper {
         grid-gap: 0.5rem;
