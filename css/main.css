@@ -97,3 +97,14 @@ h2 {
     font-weight: bold;
     color: white
 }
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 0.8em;
+        padding: 1rem;
+    }
+
+    .white-button {
+        width: 50%;
+    }
+}
