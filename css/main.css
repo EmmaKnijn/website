@@ -13,12 +13,29 @@ body {
 .wrapper {
     grid-template-columns: auto auto;
     display: inline-grid;
+    grid-gap: 3rem;
+    width: 87vw;
 }
 
 a {
     color: black;
 }
 
+.aboutmeholder a {
+    color: white;
+}
+
+.linksholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .button {
     background: #3f3f3f;
@@ -29,11 +46,24 @@ a {
     text-decoration: none;
 }
 
+.white-button {
+    background: #ffffff;
+    color:rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+}
+
+
 .project {
     color:black;
     background-color: white;
     border-radius: 10px;
-    padding: 1.5rem
+    padding: 1.5rem;
+    margin: 10px;
 }
 
 .projects-section {
@@ -41,7 +71,13 @@ a {
     grid-template-columns: auto auto;
     grid-gap: 1rem;
     margin: 1rem;
-    width: 40%;
+    width: 50vw;
+}
+
+.other-section {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
 .logo {
@@ -52,24 +88,8 @@ a {
 
 .center {
     margin: auto;
-    width: 40em;
     padding: 10px;
     text-align: center;
-}
-
-
-@media only screen and (max-width: 750px) {
-    body {
-        width: 100%;
-    }
-    .center-projects {
-        width: 100%;
-    }
-    .intro-card {
-        width: 100%;
-        text-align: center;
-
-    }
 }
 
 h2 {
