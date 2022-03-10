@@ -11,8 +11,9 @@ body {
 }
 
 .wrapper {
-    grid-template-columns: auto auto;
-    display: inline-grid;
+    display: flex;
+    flex-direction: row;
+    
     grid-gap: 3rem;
     width: 87vw;
 }
@@ -67,7 +68,8 @@ a {
 }
 
 .projects-section {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: auto auto;
     grid-gap: 1rem;
     margin: 1rem;
@@ -109,6 +111,21 @@ h2 {
     }
     .wrapper {
         grid-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-section {
+        width: 100vw;
+    }
+    
+    .linksholder {
+        width: 89vw;
+    }
+    .contactholder {
+        width: 89vw;
+    }
+    .aboutmeholder {
+        width: 89vw;
     }
 }
 
