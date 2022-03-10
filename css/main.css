@@ -107,4 +107,7 @@ h2 {
     .white-button {
         width: 50%;
     }
+    .wrapper {
+        grid-gap: 1rem;
+    }
 }
