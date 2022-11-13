@@ -1,1 +1,0 @@
-rsync -av . cobalt:/var/www/bliz/
