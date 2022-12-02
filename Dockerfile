@@ -1,6 +1,3 @@
-FROM ubuntu
-RUN apt update
-RUN apt install nginx -y
-COPY public/ /var/www/html
+FROM httpd:2.4
+COPY public/ /usr/local/apache2/htdocs/
 EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
