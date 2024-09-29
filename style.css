@@ -19,12 +19,14 @@
 }
 
 .project {
-    background-color: #535353;
-    padding: 20px;
-    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
+    padding: 1rem;
+    border-radius: 1rem;
 }
 body {
-    background-color: #252525;
+    background: rgb(0,0,0);
+    background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(23,0,13,1) 90%, rgba(255,0,138,1) 100%); 
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
