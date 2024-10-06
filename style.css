@@ -24,7 +24,7 @@
     padding: 1rem;
     border-radius: 1rem;
 }
-body {
+html {
     background: rgb(0,0,0);
     background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(23,0,13,1) 90%, rgba(255,0,138,1) 100%); 
     font-family: "Source Code Pro", monospace;
@@ -38,8 +38,6 @@ body {
     max-width: 1080px;
     
 }
-
-
 
 a {
     color: #ffffff;
