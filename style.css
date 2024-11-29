@@ -1,0 +1,75 @@
+.header {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}
+.subheader {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+
+}
+
+.spacer {
+    height: 20px;
+}
+
+.project {
+    background: rgb(0,0,0);
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
+    padding: 1rem;
+    border-radius: 1rem;
+}
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(23,0,13,1) 90%, rgba(255,0,138,1) 100%); 
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 1080px;
+    overscroll-behavior: none;
+}
+
+.button {
+    background: rgb(0,0,0);
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 0px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style:solid;
+    font-size: x-large;
+    font-weight: 700    ;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.xbold {
+    font-weight: 900;
+}
+
+a {
+    color: #ffffff;
+}
+
+h2 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+}
+
