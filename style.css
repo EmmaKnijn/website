@@ -39,6 +39,27 @@ body {
     overscroll-behavior: none;
 }
 
+.button {
+    background: rgb(0,0,0);
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 20px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style:solid;
+    font-size: x-large;
+    font-weight: 700    ;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.xbold {
+    font-weight: 900;
+}
 
 a {
     color: #ffffff;
