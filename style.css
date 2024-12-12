@@ -42,14 +42,14 @@ body {
 .button {
     background: rgb(0,0,0);
     background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     text-decoration: none;
     margin: 0px;
     border-color: #ffffff;
     border-width: 3px;
     border-style:solid;
-    font-size: large;
+    font-size: medium;
     font-weight: 700;
 }
 
