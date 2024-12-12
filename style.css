@@ -39,18 +39,48 @@ body {
     overscroll-behavior: none;
 }
 
+/* Default styles for larger screens */
 .button {
     background: rgb(0,0,0);
-    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%); 
+    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%);
     padding: 0.5rem;
     border-radius: 1rem;
-    text-decoration: none;
-    margin: 0px;
+    text-decoration: none;  /* Remove text decoration here */
     border-color: #ffffff;
     border-width: 3px;
-    border-style:solid;
+    border-style: solid;
     font-size: medium;
     font-weight: 700;
+    display: inline-block;
+    margin: 0.5rem; /* Space between buttons */
+    width: auto; /* Ensures buttons don't stretch unnecessarily */
+}
+
+/* Remove text-decoration from anchor tags inside .button */
+.button a {
+    text-decoration: none;  /* Ensure links inside buttons have no text decoration */
+    color: #ffffff;  /* Make sure the text color is white */
+}
+
+/* Use Flexbox for the buttons container */
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    gap: 1rem; /* Space between buttons */
+    justify-content: center; /* Center buttons */
+    align-items: center; /* Align items vertically in the middle */
+    min-height: 100px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .button {
+        width: 100%; /* Make buttons take full width on small screens */
+        box-sizing: border-box; /* Ensure padding is inside the width */
+        font-size: 1rem; /* Slightly smaller font size */
+        padding: 0.8rem; /* Increase padding for better touch support */
+    
+    }
 }
 
 .bold {
