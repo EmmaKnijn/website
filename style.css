@@ -78,7 +78,7 @@ body {
         width: 100%; /* Make buttons take full width on small screens */
         box-sizing: border-box; /* Ensure padding is inside the width */
         font-size: 1rem; /* Slightly smaller font size */
-        padding: 0.8rem; /* Increase padding for better touch support */
+        padding: 0.2rem; /* Increase padding for better touch support */
     
     }
 }
