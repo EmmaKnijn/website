@@ -43,3 +43,6 @@ You can import a public key using the following command:
 
 To import a public key from a keyserver, run
 `gpg --keyserver certserver.pgp.com --recv-keys (fingerprint)`
+
+If the certserver isnt working, try Ubuntu's
+`--keyserver keyserver.ubuntu.com`
