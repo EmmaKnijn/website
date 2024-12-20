@@ -20,3 +20,26 @@ The keyservers syncronise every now and then so just use the one thats closest.
 
 To export your public key in armor format (ASCII representation), run
 `gpg --armor --export (your pgp fingerprint)`
+
+
+## User Verification and signing
+To sign any file, use
+`gpg --output file.sig --sign file`
+
+To verify a file, use
+`gpg --verify file.sig`
+
+To verify and decrypt a file, use
+`gpg --output file --decrypt file.sig`
+
+You can also clearsign a file, for posting somewhere else, using
+`gpg --output file.sig --clearsign file`
+
+You can export a public key using the following command:
+`gpg --output alice.gpg --export (email address)`
+
+You can import a public key using the following command:
+`gpg --import blake.gpg`
+
+To import a public key from a keyserver, run
+`gpg --keyserver certserver.pgp.com --recv-keys (fingerprint)`
