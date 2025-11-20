@@ -13,3 +13,41 @@ body {
     background: rgb(0,0,0);
     background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(37,0,20,1) 71%, rgba(255,0,138,1) 100%);
 }
+
+.news-item {
+    padding: 1rem;
+    position: relative; /* Required for the ::before to position correctly */
+    /* Keep the default background here as the base layer */
+    background: linear-gradient(10deg,rgba(0,0,0,1), rgba(37,0,20,1) 30%, rgba(255,0,138,1));
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    /* Remove 'transition: background' */
+    isolation: isolate; /* creates a stacking context so z-index works predictably */
+    overflow: hidden; /* Ensures the pseudo-element respects border-radius */
+}
+
+/* Create the Hover Gradient on a layer on top */
+.news-item::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Short for top:0, right:0, bottom:0, left:0 */
+    background: linear-gradient(20deg,rgba(0,0,0,1), rgba(37,0,20,1) 30%, rgba(255,0,138,1) 80%);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Animate the opacity */
+    z-index: -1; /* Places it behind the text content */
+}
+
+/* When hovering the parent, fade in the pseudo-element */
+.news-item:hover::before {
+    opacity: 1;
+}
+
+/* Ensure your inner content stays on top */
+.news-item div {
+    background-color: rgb(0,0,0);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative; /* Ensures it sits above the ::before pseudo-element */
+    z-index: 1; 
+}
