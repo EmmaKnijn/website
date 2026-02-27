@@ -27,6 +27,12 @@ body {
     overflow: hidden; /* Ensures the pseudo-element respects border-radius */
 }
 
+.lastfm {
+    position: absolute;
+    right: 20px;
+    top: 300px;
+}
+
 /* Create the Hover Gradient on a layer on top */
 .news-item::before {
     content: "";
@@ -50,4 +56,15 @@ body {
     border-radius: 15px;
     position: relative; /* Ensures it sits above the ::before pseudo-element */
     z-index: 1; 
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .lastfm {
+    position:static;
+    
+  }
+  .lastfm iframe {
+    width: 90vw;
+  }
 }
